@@ -1,30 +1,30 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import Feather from '@expo/vector-icons/Feather';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import { Theme } from '../../theme';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 const Info = () => {
   return (
-    <View className='flex-row items-center justify-center my-2 gap-2 mx-auto' >
-        <View className='flext-1 items-center shadow bg-white rounded-3xl p-4' >
+    <View className="flex-row justify-center items-center gap-2 my-2 mx-auto">
+        <View className="flex1 bg-white shadow items-center p-4 rounded-3xl">
                 <Feather name="sunrise" size={24} color="black" />
-                <Text className="text-purpleDark font-bold text-lg" >6:00</Text>
-                <Text className="text-lg text-secondaryDark font-bold" >Sunrise</Text>
+                <Text className="text-lg text-purpleDark" >6:00</Text>
+                <Text className="text-lg text-secondaryDark">Sunrise</Text>
         </View>
 
-        <View className='flext-1 items-center shadow bg-white rounded-3xl p-4' >
-                <FontAwesome6 name="droplet" size={24} color={Theme.skyBlue} />
-                <Text className="text-purpleDark font-bold text-lg" >84%</Text>
-                <Text className="text-lg text-secondaryDark font-bold" >Sunrise</Text>
+        <View className="flex1 bg-white shadow items-center p-4 rounded-3xl">
+                <MaterialIcons name="water-drop" size={24} color="black" />
+                <Text className="text-lg text-purpleDark" >84%</Text>
+                <Text className="text-lg text-secondaryDark">Rain</Text>    
+
+
         </View>
 
-        <View className='flext-1 items-center shadow bg-white rounded-3xl p-4' >
-                <Feather name="sunset" size={24} color="black" />
-                <Text className="text-purpleDark font-bold text-lg" >5:00</Text>
-                <Text className="text-lg text-secondaryDark font-bold" >Sunset</Text>
+        <View className="flex1 bg-white shadow items-center p-4 rounded-3xl">
+            <Feather name="sunset" size={24} color="black" />
+            <Text className="text-lg text-purpleDark" >5:00</Text>
+            <Text className="text-lg text-secondaryDark">Sunset</Text>
         </View>
-
     </View>
   )
 }

@@ -5,21 +5,18 @@ import { Theme } from '../../theme';
 
 const InputBox = () => {
   return (
-    <View style={{position:"relative"}}>
-        <TextInput 
-        placeholder='Type City Name'
-        className='bg-white rounded-3xl shadow ps-4 mb-4 mt-5'
-        style={{paddingLeft:32}}
+    <View className='relative'>
+        <TextInput
+         placeholder='City Name'
+         className='p-4 ps-14 bg-white shadow rounded-2xl placeholder:font-bold placeholder:text-secondaryDark'   
         />
 
-        <MaterialCommunityIcons 
-        name="cloud-search-outline" 
-        size={20} 
-        color={Theme.secondaryDark}
-        className=" top-4 left-4"
-        style={{position:"absolute",marginTop:8,marginLeft:4}}
-        />
-
+    <MaterialCommunityIcons 
+    name="cloud-search-outline"
+    size={24} 
+    color={Theme.secondaryDark} 
+    className='absolute top-2 left-4'
+    />
     </View>
   )
 }

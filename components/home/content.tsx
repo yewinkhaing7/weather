@@ -3,14 +3,18 @@ import { Image, Text, View } from 'react-native'
 
 const Content = () => {
   return (
-    <View className="justify-center items-center mb-6"  >
-        <Image 
-        source={require("../../assets/storm.png")} 
-        className="w-32 h-32" />
+    <View className='items-center justify-center'>
+        <Image source={require("../../assets/storm.png")} className='w-60  h-60' />
 
-        <Text className='text-[12rem] font-extrabold' style={{fontSize:32}}>26 °</Text>
-        <Text className='text-4xl font-medium text-secondaryDark' >ThunderStorm</Text>
+        <View className="relative">
+                <Text className="text-[12rem]">26</Text>
+                <Text className="absolute top-6 text-8xl right-[-20]">°</Text>
+        </View>
+
+        <Text className="text-secondaryDark text-3xl">ThunderStorm</Text>
+
     </View>
+
   )
 }
 

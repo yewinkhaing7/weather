@@ -5,6 +5,7 @@ import InputBox from '../components/home/input-box';
 import Content from '../components/home/content';
 import Info from '../components/home/info';
 
+
 export default function Index() {
   return (
   
@@ -16,22 +17,23 @@ export default function Index() {
         className="w-full h-full"
         blurRadius={6}
       > 
-          <View className='px-2'>
-                <Header />
-                <InputBox />
-                <Content />
-                <Info  />
-                <Text className="text-center text-secondaryDark text-sm my-3">Demo Weather App-CODE HUB</Text>
-          </View>
+          
+      <View className='px-8'>
+            
+          <Header />
+          <InputBox />
+          <Content />
+          <Info />
+
+          <Text className="text-sm mt-6 text-center text-secondaryDark">Demo Weather App-YWK</Text>
+               
+      </View>
               
       <StatusBar barStyle={"default"} />
          
       </ImageBackground>
   
-
-
-        
-    
+   
    
 
     </SafeAreaView>
